@@ -130,7 +130,7 @@ void captureProcess() {
     return;
   }
 
-  // --- STEP 1: Save to SD Card ---
+  // --- STEP 1: Save to SD Card 
   String path = "/pic_" + String(pictureCount) + ".jpg";
   fs::FS &fs = SD_MMC;
   File file = fs.open(path.c_str(), FILE_WRITE);
@@ -143,7 +143,7 @@ void captureProcess() {
   }
   file.close();
 
-  // --- STEP 2: Send to Smartphone Server ---
+  // --- STEP 2: Send to Smartphone Server 
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
     if (http.begin(serverUrl)) {
