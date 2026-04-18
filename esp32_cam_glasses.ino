@@ -17,7 +17,7 @@
 // ===========================
 const char* ssid = "YOUR_PHONE_HOTSPOT_NAME";
 const char* password = "YOUR_HOTSPOT_PASSWORD";
-const char* serverUrl = "http://192.168.x.x:5000/upload"; // Target Phone Server URL
+const char* serverUrl = "http://192.168.x.x:5000/upload"; //  Phone Server URL
 
 // Transmission Interval (ms)
 const int captureInterval = 3000; 
